@@ -20,15 +20,13 @@ protocol MainPresenterView: AnyObject {
         isButton: Bool,
         titleButton: String)
     func hideMessage()
-    
     func displayView(title: String)
     func displayView(text: String)
     func displayView(logoURL: String)
     func displayView(photoURL: String)
     func displayView(address: String)
-    func displayView(latitude: Double, longitude: Double)
+    func displayView(latitude: Double, longitude: Double, regionRadius: Double)
     func displaview(city: String, neighborhood: String)
-    
     func scrollToComments()
-    func showAlert(title: String)
+    func showAlert(title: String, message: String)
 }

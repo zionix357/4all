@@ -11,6 +11,8 @@
 		5822364822E65CFA007F3F5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5822364722E65CFA007F3F5B /* AppDelegate.swift */; };
 		5822364F22E65CFD007F3F5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5822364E22E65CFD007F3F5B /* Assets.xcassets */; };
 		5822365222E65CFD007F3F5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5822365022E65CFD007F3F5B /* LaunchScreen.storyboard */; };
+		582C06AE22E8801C0027E098 /* NavigationItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582C06AD22E8801C0027E098 /* NavigationItem+Extension.swift */; };
+		582C06B022E880740027E098 /* MKMapView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582C06AF22E880740027E098 /* MKMapView+Extension.swift */; };
 		58CB2CF722E7B45B0064B95D /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58CB2CF622E7B45B0064B95D /* Home.storyboard */; };
 		58CB2CFA22E7B4B40064B95D /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CB2CF922E7B4B40064B95D /* HomeController.swift */; };
 		58CB2D0422E7B8DA0064B95D /* LoadingViewOverlay.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58CB2D0222E7B8DA0064B95D /* LoadingViewOverlay.xib */; };
@@ -52,6 +54,8 @@
 		5822364E22E65CFD007F3F5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5822365122E65CFD007F3F5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5822365322E65CFD007F3F5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		582C06AD22E8801C0027E098 /* NavigationItem+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NavigationItem+Extension.swift"; sourceTree = "<group>"; };
+		582C06AF22E880740027E098 /* MKMapView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapView+Extension.swift"; sourceTree = "<group>"; };
 		58CB2CF622E7B45B0064B95D /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		58CB2CF922E7B4B40064B95D /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		58CB2D0222E7B8DA0064B95D /* LoadingViewOverlay.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingViewOverlay.xib; sourceTree = "<group>"; };
@@ -186,6 +190,8 @@
 				58CB2D3022E7D9460064B95D /* UIScrollView+Extension.swift */,
 				58CB2D3222E7D9790064B95D /* UIViewController+Extension.swift */,
 				58CB2D4622E7F3DD0064B95D /* String+Extension.swift */,
+				582C06AD22E8801C0027E098 /* NavigationItem+Extension.swift */,
+				582C06AF22E880740027E098 /* MKMapView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -463,6 +469,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				582C06AE22E8801C0027E098 /* NavigationItem+Extension.swift in Sources */,
 				58CB2D3322E7D9790064B95D /* UIViewController+Extension.swift in Sources */,
 				58CB2D0F22E7BFC00064B95D /* TaskRepository.swift in Sources */,
 				58CB2D3D22E7E2F40064B95D /* MainPresenterRouter.swift in Sources */,
@@ -475,6 +482,7 @@
 				58CB2D0522E7B8DA0064B95D /* LoadingViewOverlay.swift in Sources */,
 				58CB2D1822E7C69E0064B95D /* HomePresenterRouter.swift in Sources */,
 				58CB2D0822E7B95B0064B95D /* UIView+Extension.swift in Sources */,
+				582C06B022E880740027E098 /* MKMapView+Extension.swift in Sources */,
 				58CB2D1222E7C0E30064B95D /* List.swift in Sources */,
 				58CB2D3122E7D9460064B95D /* UIScrollView+Extension.swift in Sources */,
 				58CB2D1F22E7CAC70064B95D /* ARMessageView.swift in Sources */,

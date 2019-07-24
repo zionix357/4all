@@ -11,8 +11,6 @@ import Cosmos
 
 class CommentCell: UITableViewCell {
     class var identifier:String {return String(describing: type(of: CommentCell.self))}
-    
-    
     @IBOutlet weak var photoImageView: UIImageViewX!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!

@@ -20,7 +20,7 @@ class MainPresenter {
             view?.displayView(title: ass.title)
             view?.displayView(text: ass.text)
             view?.displayView(address: ass.address)
-            view?.displayView(latitude: ass.latitude, longitude: ass.longitude)
+            view?.displayView(latitude: ass.latitude, longitude: ass.longitude, regionRadius: 500)
             view?.displaview(city: ass.city, neighborhood: ass.neighborhood)
         }
     }
@@ -32,7 +32,9 @@ class MainPresenter {
         self.router = router
     }
     
-    func present() { fetchId() }
+    func present() {
+        fetchId()
+    }
     
     private func fetchId() {
         guard let id = id else { fatalError("Injection ID") }
@@ -74,7 +76,7 @@ class MainPresenter {
     
     func onAddressButtonPressed() {
         guard let ass = assignment else { fatalError("Injection ID") }
-        view?.showAlert(title: ass.getAddress())
+        view?.showAlert(title: "Address", message: ass.getAddress())
     }
     
     func onCommentButtonPressed() {

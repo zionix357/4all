@@ -9,10 +9,18 @@
 import UIKit
 
 extension UIViewController {
-    func setBackArrowButton(){
+    func setBackArrowButton() {
         let backBtn = #imageLiteral(resourceName: "arrow-left").withRenderingMode(.alwaysTemplate)
         navigationController?.navigationBar.backIndicatorImage = backBtn
         navigationController?.navigationBar.backIndicatorTransitionMaskImage = backBtn
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+    }
+    
+    func showAlert(title: String, text: String) {
+        DispatchQueue.main.async {
+            let alert = UIAlertController(title: title, message: text, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
     }
 }

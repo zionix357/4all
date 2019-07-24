@@ -9,7 +9,6 @@
 import UIKit
 
 class HomeController: UIViewController {
-    
     @IBOutlet weak var tableView: UITableView! {
         didSet {
             tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")

@@ -9,7 +9,6 @@
 import UIKit
 
 class TitleView: UIView {
-    
     @IBOutlet weak var titleLabel: UILabel!
 
     class func instantiateFromNib() -> TitleView {

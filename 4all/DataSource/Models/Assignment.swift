@@ -32,8 +32,8 @@ struct Assignment: Codable {
         case phone = "telefone"
         case text = "texto"
         case address = "endereco"
-        case latitude = "latitude"
-        case longitude = "longitude"
+        case latitude
+        case longitude
         case comments = "comentarios"
     }
     

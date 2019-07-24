@@ -19,7 +19,9 @@ class HomePresenter {
         self.router = router
     }
     
-    func present() { fetchAll() }
+    func present() {
+        fetchAll()
+    }
     
     private func fetchAll() {
         view?.startLoading(text: "Fetching...", backgroundColor: .white)

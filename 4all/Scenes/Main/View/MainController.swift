@@ -80,11 +80,8 @@ extension MainController: UITableViewDelegate, UITableViewDataSource {
 }
 
 extension MainController: MainPresenterView {
-    func showAlert(title: String) {
-        let alertController = UIAlertController(title: "Address", message: title, preferredStyle: .alert)
-        let actionOK = UIAlertAction(title: "OK", style: .default, handler: nil)
-        alertController.addAction(actionOK)
-        self.present(alertController, animated: true, completion: nil)
+    func showAlert(title: String, message: String) {
+        showAlert(title: title, text: message)
     }
     
     func scrollToComments() {
@@ -92,9 +89,7 @@ extension MainController: MainPresenterView {
     }
     
     func displaview(city: String, neighborhood: String) {
-        let customTitleView = TitleView.instantiateFromNib()
-        customTitleView.setTitle("\(city) - \(neighborhood)")
-        self.navigationItem.titleView = customTitleView
+        navigationItem.setTitleViewCustom(text: "\(city) - \(neighborhood)")
     }
     
     func displayView(title: String) {
@@ -119,15 +114,8 @@ extension MainController: MainPresenterView {
         addressLabel.text = address
     }
     
-    func displayView(latitude: Double, longitude: Double) {
-        let annotation = MKPointAnnotation()
-        annotation.coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
-        mapView.addAnnotation(annotation)
-        let initialLocation = CLLocation(latitude: latitude, longitude: longitude)
-        let regionRadius: CLLocationDistance = 500
-        let coordinateRegion = MKCoordinateRegion(center: initialLocation.coordinate,
-                                                  latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
-        mapView.setRegion(coordinateRegion, animated: true)
+    func displayView(latitude: Double, longitude: Double, regionRadius: Double) {
+        mapView.setPinIn(latitude: latitude, longitude: longitude, regionRadius: regionRadius)
     }
     
     func startLoading(text: String, backgroundColor: UIColor) {

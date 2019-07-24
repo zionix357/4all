@@ -9,7 +9,7 @@
 import UIKit
 
 class MainPresenterRouter {
-    struct Constants { // swiftlint:disable nesting
+    struct Constants {
         struct Segue {
             static let ShowServices = "servicesSegue"
         }
