@@ -9,10 +9,20 @@
 import UIKit
 
 class MainPresenterRouter {
+    struct Constants { // swiftlint:disable nesting
+        struct Segue {
+            static let ShowServices = "servicesSegue"
+        }
+    }
+    
     private weak var viewController: MainController?
     
     init(viewController: MainController) {
         self.viewController = viewController
+    }
+    
+    func onShowServices() {
+        viewController?.performSegue(withIdentifier: Constants.Segue.ShowServices, sender: nil)
     }
     
     func prepare(for segue: UIStoryboardSegue, sender: Any?) { }

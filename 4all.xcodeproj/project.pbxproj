@@ -41,6 +41,7 @@
 		58CB2D4322E7E50C0064B95D /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CB2D4222E7E50C0064B95D /* Comment.swift */; };
 		58CB2D4522E7EFDE0064B95D /* CommentCellPresenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CB2D4422E7EFDE0064B95D /* CommentCellPresenterView.swift */; };
 		58CB2D4722E7F3DD0064B95D /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CB2D4622E7F3DD0064B95D /* String+Extension.swift */; };
+		58CB2D4A22E7FA260064B95D /* Services.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58CB2D4922E7FA260064B95D /* Services.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +82,7 @@
 		58CB2D4222E7E50C0064B95D /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		58CB2D4422E7EFDE0064B95D /* CommentCellPresenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCellPresenterView.swift; sourceTree = "<group>"; };
 		58CB2D4622E7F3DD0064B95D /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		58CB2D4922E7FA260064B95D /* Services.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Services.storyboard; sourceTree = "<group>"; };
 		81E1460D2FB2B5D4CC8981B4 /* Pods-4all.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-4all.release.xcconfig"; path = "Target Support Files/Pods-4all/Pods-4all.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,6 +133,7 @@
 		58CB2CF422E7B43D0064B95D /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				58CB2D4822E7FA160064B95D /* Services */,
 				58CB2D2022E7CF2B0064B95D /* Main */,
 				58CB2CF522E7B44A0064B95D /* Home */,
 			);
@@ -307,6 +310,22 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		58CB2D4822E7FA160064B95D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				58CB2D4B22E7FB420064B95D /* View */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		58CB2D4B22E7FB420064B95D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				58CB2D4922E7FA260064B95D /* Services.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		9BF01DC9FF932D98B4BDA394 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -390,6 +409,7 @@
 				5822364F22E65CFD007F3F5B /* Assets.xcassets in Resources */,
 				58CB2D2F22E7D40B0064B95D /* CommentCell.xib in Resources */,
 				58CB2D0422E7B8DA0064B95D /* LoadingViewOverlay.xib in Resources */,
+				58CB2D4A22E7FA260064B95D /* Services.storyboard in Resources */,
 				58CB2CF722E7B45B0064B95D /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

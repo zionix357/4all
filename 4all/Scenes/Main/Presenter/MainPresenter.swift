@@ -80,4 +80,8 @@ class MainPresenter {
     func onCommentButtonPressed() {
         view?.scrollToComments()
     }
+    
+    func onServiceButtonPressed() {
+        router.onShowServices()
+    }
 }

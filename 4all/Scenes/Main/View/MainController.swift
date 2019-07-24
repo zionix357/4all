@@ -53,7 +53,7 @@ class MainController: UIViewController {
     }
     
     @IBAction func onServiceButton(_ sender: Any) {
-        
+        presenter?.onServiceButtonPressed()
     }
     
     @IBAction func onAddressButton(_ sender: Any) {

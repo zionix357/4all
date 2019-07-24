@@ -303,11 +303,20 @@
                         <outlet property="scrollView" destination="3aI-Ug-tyU" id="i95-fX-yZj"/>
                         <outlet property="textLabel" destination="Joq-JX-C8d" id="Ql1-TS-GnO"/>
                         <outlet property="titleLabel" destination="Oh1-Au-RrC" id="Whp-qo-S0s"/>
+                        <segue destination="BQK-Zf-fan" kind="show" identifier="servicesSegue" id="Jk1-fW-pIJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kql-ts-y6c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="424.63768115942031" y="-161.38392857142856"/>
+        </scene>
+        <!--Services-->
+        <scene sceneID="QA2-sT-UMS">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Services" id="BQK-Zf-fan" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FUg-0Q-Ifu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="967" y="-161"/>
         </scene>
     </scenes>
     <resources>
