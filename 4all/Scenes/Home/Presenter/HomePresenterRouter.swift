@@ -11,7 +11,7 @@ import UIKit
 class HomePresenterRouter {
     struct Constants { // swiftlint:disable nesting
         struct Segue {
-            static let ShowDetail = ""
+            static let ShowMain = "mainSegue"
         }
     }
     private weak var viewController: HomeController?
@@ -20,8 +20,8 @@ class HomePresenterRouter {
         self.viewController = viewController
     }
     
-    func onShowDetails(id: String) {
-        viewController?.performSegue(withIdentifier: Constants.Segue.ShowDetail, sender: id)
+    func onShowMain(id: String) {
+        viewController?.performSegue(withIdentifier: Constants.Segue.ShowMain, sender: id)
     }
     
     func prepare(for segue: UIStoryboardSegue, sender: Any?) { }

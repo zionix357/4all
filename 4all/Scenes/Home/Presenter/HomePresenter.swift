@@ -45,7 +45,7 @@ class HomePresenter {
     }
     
     func onDidSelect(for row: Int) {
-        router.onShowDetails(id: ids[row])
+        router.onShowMain(id: ids[row])
     }
     
     func prepare(for segue: UIStoryboardSegue, sender: Any?) {

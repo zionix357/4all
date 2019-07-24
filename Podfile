@@ -9,5 +9,6 @@ target '4all' do
   pod 'Swinject'
   pod 'SwinjectStoryboard'
   pod 'Kingfisher', '~> 5.0'
+  pod 'Cosmos'
 
 end

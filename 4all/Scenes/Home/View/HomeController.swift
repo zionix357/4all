@@ -21,6 +21,7 @@ class HomeController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setBackArrowButton()
         presenter?.present()
     }
     

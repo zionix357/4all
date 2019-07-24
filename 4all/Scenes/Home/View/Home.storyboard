@@ -39,11 +39,20 @@
                     <navigationItem key="navigationItem" title="Home" id="4yx-Pk-eWv"/>
                     <connections>
                         <outlet property="tableView" destination="ZR5-h9-QCK" id="Rox-j0-BV3"/>
+                        <segue destination="7WK-0x-zFe" kind="show" identifier="mainSegue" id="9U0-As-kvt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qWW-Pv-yPY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="937.68115942028987" y="150.66964285714286"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="kvE-dQ-OMb">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="7WK-0x-zFe" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KbW-4J-IIe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1546" y="151"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nar-va-rpY">
@@ -53,6 +62,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="8LP-xg-TMd">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="0.87450980392156863" green="0.5490196078431373" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
