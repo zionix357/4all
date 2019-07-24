@@ -24,5 +24,12 @@ class HomePresenterRouter {
         viewController?.performSegue(withIdentifier: Constants.Segue.ShowMain, sender: id)
     }
     
-    func prepare(for segue: UIStoryboardSegue, sender: Any?) { }
+    func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == Constants.Segue.ShowMain,
+            let destination = segue.destination as? MainController,
+            let id = sender as? String
+            {
+            destination.presenter?.id = id
+        }
+    }
 }

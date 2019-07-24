@@ -10,6 +10,7 @@ import Moya
 
 protocol TaskRepositoryProtocol {
     func fetchAll(response: @escaping ([String]?, String) -> Void)
+    func fetchId(id: String, response: @escaping (Assignment?, String) -> Void)
 }
 
 struct TaskRepository: TaskRepositoryProtocol {
@@ -27,6 +28,23 @@ struct TaskRepository: TaskRepositoryProtocol {
                 do {
                     let list = try decoder.decode(List.self, from: res.data)
                     response(list.list, "Success!")
+                } catch {
+                    response(nil, "We could not decode the response!")
+                }
+            case .failure(let err):
+                response(nil, err.localizedDescription)
+            }
+        }
+    }
+    
+    func fetchId(id: String, response: @escaping (Assignment?, String) -> Void) {
+        provider.request(.getTask(id: id)) { (result) in
+            switch result {
+            case .success(let res):
+                let decoder = JSONDecoder()
+                do {
+                    let assignment = try decoder.decode(Assignment.self, from: res.data)
+                    response(assignment, "Success!")
                 } catch {
                     response(nil, "We could not decode the response!")
                 }

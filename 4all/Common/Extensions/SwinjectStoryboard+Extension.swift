@@ -24,5 +24,12 @@ extension SwinjectStoryboard {
             presenter.taskRepository = resolver.resolve(TaskRepositoryProtocol.self)
             controller.presenter = presenter
         }
+        defaultContainer.storyboardInitCompleted(MainController.self) { (resolver, controller) in
+            let presenter = MainPresenter(
+                view: controller.self,
+                router: MainPresenterRouter(viewController: controller.self))
+            presenter.taskRepository = resolver.resolve(TaskRepositoryProtocol.self)
+            controller.presenter = presenter
+        }
     }
 }

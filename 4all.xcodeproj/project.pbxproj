@@ -34,6 +34,13 @@
 		58CB2D3322E7D9790064B95D /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CB2D3222E7D9790064B95D /* UIViewController+Extension.swift */; };
 		58CB2D3622E7D9F60064B95D /* TitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58CB2D3522E7D9F60064B95D /* TitleView.xib */; };
 		58CB2D3822E7DACC0064B95D /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CB2D3722E7DACC0064B95D /* TitleView.swift */; };
+		58CB2D3B22E7E2E40064B95D /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CB2D3A22E7E2E40064B95D /* MainPresenter.swift */; };
+		58CB2D3D22E7E2F40064B95D /* MainPresenterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CB2D3C22E7E2F40064B95D /* MainPresenterRouter.swift */; };
+		58CB2D3F22E7E3070064B95D /* MainPresenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CB2D3E22E7E3070064B95D /* MainPresenterView.swift */; };
+		58CB2D4122E7E45B0064B95D /* Assignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CB2D4022E7E45B0064B95D /* Assignment.swift */; };
+		58CB2D4322E7E50C0064B95D /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CB2D4222E7E50C0064B95D /* Comment.swift */; };
+		58CB2D4522E7EFDE0064B95D /* CommentCellPresenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CB2D4422E7EFDE0064B95D /* CommentCellPresenterView.swift */; };
+		58CB2D4722E7F3DD0064B95D /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CB2D4622E7F3DD0064B95D /* String+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +74,13 @@
 		58CB2D3222E7D9790064B95D /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		58CB2D3522E7D9F60064B95D /* TitleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleView.xib; sourceTree = "<group>"; };
 		58CB2D3722E7DACC0064B95D /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		58CB2D3A22E7E2E40064B95D /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		58CB2D3C22E7E2F40064B95D /* MainPresenterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterRouter.swift; sourceTree = "<group>"; };
+		58CB2D3E22E7E3070064B95D /* MainPresenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterView.swift; sourceTree = "<group>"; };
+		58CB2D4022E7E45B0064B95D /* Assignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment.swift; sourceTree = "<group>"; };
+		58CB2D4222E7E50C0064B95D /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		58CB2D4422E7EFDE0064B95D /* CommentCellPresenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCellPresenterView.swift; sourceTree = "<group>"; };
+		58CB2D4622E7F3DD0064B95D /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		81E1460D2FB2B5D4CC8981B4 /* Pods-4all.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-4all.release.xcconfig"; path = "Target Support Files/Pods-4all/Pods-4all.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -168,6 +182,7 @@
 				58CB2D1B22E7C75E0064B95D /* SwinjectStoryboard+Extension.swift */,
 				58CB2D3022E7D9460064B95D /* UIScrollView+Extension.swift */,
 				58CB2D3222E7D9790064B95D /* UIViewController+Extension.swift */,
+				58CB2D4622E7F3DD0064B95D /* String+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -202,6 +217,8 @@
 			isa = PBXGroup;
 			children = (
 				58CB2D1122E7C0E30064B95D /* List.swift */,
+				58CB2D4022E7E45B0064B95D /* Assignment.swift */,
+				58CB2D4222E7E50C0064B95D /* Comment.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -236,6 +253,7 @@
 		58CB2D2022E7CF2B0064B95D /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				58CB2D3922E7E2CA0064B95D /* Presenter */,
 				58CB2D2A22E7D3380064B95D /* View */,
 			);
 			path = Main;
@@ -256,6 +274,7 @@
 				58CB2D2B22E7D3DF0064B95D /* CommentCell */,
 				58CB2D2122E7CF3A0064B95D /* Main.storyboard */,
 				58CB2D2322E7CF490064B95D /* MainController.swift */,
+				58CB2D3E22E7E3070064B95D /* MainPresenterView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -265,6 +284,7 @@
 			children = (
 				58CB2D2C22E7D40B0064B95D /* CommentCell.swift */,
 				58CB2D2D22E7D40B0064B95D /* CommentCell.xib */,
+				58CB2D4422E7EFDE0064B95D /* CommentCellPresenterView.swift */,
 			);
 			path = CommentCell;
 			sourceTree = "<group>";
@@ -276,6 +296,15 @@
 				58CB2D3722E7DACC0064B95D /* TitleView.swift */,
 			);
 			path = TitleView;
+			sourceTree = "<group>";
+		};
+		58CB2D3922E7E2CA0064B95D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				58CB2D3A22E7E2E40064B95D /* MainPresenter.swift */,
+				58CB2D3C22E7E2F40064B95D /* MainPresenterRouter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		9BF01DC9FF932D98B4BDA394 /* Pods */ = {
@@ -416,9 +445,11 @@
 			files = (
 				58CB2D3322E7D9790064B95D /* UIViewController+Extension.swift in Sources */,
 				58CB2D0F22E7BFC00064B95D /* TaskRepository.swift in Sources */,
+				58CB2D3D22E7E2F40064B95D /* MainPresenterRouter.swift in Sources */,
 				58CB2D1C22E7C75E0064B95D /* SwinjectStoryboard+Extension.swift in Sources */,
 				58CB2D2922E7D21B0064B95D /* UITintedImageView.swift in Sources */,
 				58CB2D0C22E7BE030064B95D /* TaskService.swift in Sources */,
+				58CB2D4722E7F3DD0064B95D /* String+Extension.swift in Sources */,
 				58CB2D1A22E7C7150064B95D /* HomePresenterView.swift in Sources */,
 				5822364822E65CFA007F3F5B /* AppDelegate.swift in Sources */,
 				58CB2D0522E7B8DA0064B95D /* LoadingViewOverlay.swift in Sources */,
@@ -429,8 +460,13 @@
 				58CB2D1F22E7CAC70064B95D /* ARMessageView.swift in Sources */,
 				58CB2CFA22E7B4B40064B95D /* HomeController.swift in Sources */,
 				58CB2D3822E7DACC0064B95D /* TitleView.swift in Sources */,
+				58CB2D3F22E7E3070064B95D /* MainPresenterView.swift in Sources */,
+				58CB2D3B22E7E2E40064B95D /* MainPresenter.swift in Sources */,
 				58CB2D2722E7D2000064B95D /* UIImageViewX.swift in Sources */,
+				58CB2D4322E7E50C0064B95D /* Comment.swift in Sources */,
+				58CB2D4522E7EFDE0064B95D /* CommentCellPresenterView.swift in Sources */,
 				58CB2D2422E7CF490064B95D /* MainController.swift in Sources */,
+				58CB2D4122E7E45B0064B95D /* Assignment.swift in Sources */,
 				58CB2D1622E7C62B0064B95D /* HomePresenter.swift in Sources */,
 				58CB2D2E22E7D40B0064B95D /* CommentCell.swift in Sources */,
 			);
@@ -572,6 +608,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W79W37DJPU;
 				INFOPLIST_FILE = 4all/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -590,6 +627,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W79W37DJPU;
 				INFOPLIST_FILE = 4all/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
